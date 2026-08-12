@@ -144,7 +144,7 @@ if input_type == "Image":
 
         with col2:
             st.subheader("⚡ Detection Output")
-            annotated_frame = res.plot(show_labels=show_labels)
+            annotated_frame = res.plot(labels=show_labels)
             st.image(annotated_frame, channels="BGR", use_container_width=True)
 
 # --- VIDEO MODE ---
